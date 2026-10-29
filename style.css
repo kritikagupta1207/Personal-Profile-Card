@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 20px 0;
+
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:white;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.profile-card{
+    width: calc(100% - 30px);
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 30px 0;
+    border-radius: 25px;
+    background-color: white;
+    overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1), 
+              0 2px 10px rgba(0, 0, 0, 0.06); 
+}
+
+.profile-header{
+    min-height: 350px;
+    height: auto;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 25px 15px;
+    border-radius: 25px 25px 0 0;
+    background-color: #EF5064;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#profile-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#job-role{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.profile-container{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius:50%;
+    overflow:hidden;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: scale(1.8) translateX(-25px) translateY(45px);
+}
+
+.actions{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EF5064;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #af3b48;
+}
+
+.skills{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.skills div{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 10px;
+    border : 1px solid black;
+    border-radius: 25px;
+}
+
+.skills div:hover{
+    background-color: #EF5064;
+    color: white;
+    border : 1px solid #EF5064;
+}
+
+.about{
+    padding: 0 20px;
+    text-align: center;
+    gap: 10px;
+}
